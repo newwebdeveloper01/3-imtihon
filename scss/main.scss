@@ -1,0 +1,16 @@
+
+body{
+    background-color: #FFD845;
+    width: 100%;
+}
+.description{
+    font-size: 15px;
+}
+
+.img, .filter_btn, .title, .like{
+    cursor: pointer;
+}
+.like{
+    font-size: 20px;
+    float: right;
+}
