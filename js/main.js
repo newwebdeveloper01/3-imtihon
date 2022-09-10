@@ -1,7 +1,5 @@
 var pokemonList = document.querySelector('.pokemon__list');
-var minKg = document.querySelector('.min__weight').value - 0;
-var maxKg = document.querySelector('.max__weight').value - 0;
-var searchNames = document.querySelector('.search').value;
+
 function createPokemon(pokemon) {
     var colElement = document.createElement('div');
     colElement.className = 'col-6 col-lg-3 col-md-6 col-sm-6 ';
@@ -65,7 +63,9 @@ function render(pokemon) {
 
 function filterBtn() {
     
-
+    var minKg = document.querySelector('.min__weight').value - 0;
+    var maxKg = document.querySelector('.max__weight').value - 0;
+    var searchNames = document.querySelector('.search').value;
     if (minKg > 0 && maxKg > 0) pokemonList.innerHTML = null;
 
     for (let i = 0; i < pokemons.length; i++) {
